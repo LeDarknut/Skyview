@@ -224,4 +224,4 @@ class Render :
 		
 if __name__ == "__main__" :
 		
-	Render("Catalog/Bright.cat", "Catalog/Combined 1 (Hipparcos, Tycho2).cat", 1000, 600, 0, 0, 90)
+	Render("Catalog/Bright.cat", "Catalog/Hipparcos.cat", 1000, 600, 0, 0, 90)
