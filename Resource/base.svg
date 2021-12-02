@@ -1,0 +1,22 @@
+<svg viewBox="0 0 %W% %H%">
+	<defs>
+		<filter id="blur">
+			<feColorMatrix values="	0.25	0.00	0.00	0.00	0.75
+									0.00	0.25	0.00	0.00	0.75
+									0.00	0.00	0.25	0.00	0.75
+									0.00	0.00	0.00	1.00	0.00" in="SourceGraphic" result="star"/>
+			<feGaussianBlur stdDeviation="4" in="SourceGraphic" result="halo"/>
+			<feColorMatrix values="	0.75	0.00	0.00	0.00	0.25
+									0.00	0.75	0.00	0.00	0.25
+									0.00	0.00	0.75	0.00	0.25
+									0.00	0.00	0.00	1.00	0.00" in="halo" result="halo"/>
+			<feMerge>
+				<feMergeNode in="star"/>
+				<feMergeNode in="halo"/>
+			</feMerge> 
+		</filter>
+	</defs>
+	<g filter="url(#blur)">
+		%STAR%
+	</g>
+</svg>
