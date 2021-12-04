@@ -183,7 +183,7 @@ class Render :
 						
 						actions.remove(action)
 						
-						if math.acos(self.location.x * self.anchor.x + self.location.y * self.anchor.y + self.location.z * self.anchor.z) < math.pi * 0.5 :
+						if math.acos(self.camera.location.x * self.camera.anchor.x + self.camera.location.y * self.camera.anchor.y + self.camera.location.z * self.camera.anchor.z) < math.pi * 0.5 :
 
 							self.camera.move(True, 0, 1 + (speed * 2))
 							
